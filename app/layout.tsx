@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "DeFlock Indiana",
-  description: "description",
+  description: "How mass surveillance has infiltrated the Hoosier state, and what we can do to stop it.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
