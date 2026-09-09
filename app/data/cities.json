@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Indianapolis",
+    "county": "Marion County",
+    "cameraCount": 529,
+    "flockCount": 512
+  },
+  {
+    "name": "Carmel",
+    "county": "Hamilton County",
+    "cameraCount": 109,
+    "flockCount": 106
+  },
+  {
+    "name": "Fort Wayne",
+    "county": "Allen County",
+    "cameraCount": 91,
+    "flockCount": 82
+  },
+  {
+    "name": "Evansville",
+    "county": "Vanderburgh County",
+    "cameraCount": 73,
+    "flockCount": 37
+  },
+  {
+    "name": "South Bend",
+    "county": "St. Joseph County",
+    "cameraCount": 70,
+    "flockCount": 68
+  },
+  {
+    "name": "Jeffersonville",
+    "county": "Clark County",
+    "cameraCount": 68,
+    "flockCount": 68
+  },
+  {
+    "name": "Michigan City",
+    "county": "LaPorte County",
+    "cameraCount": 66,
+    "flockCount": 65
+  },
+  {
+    "name": "Greenwood",
+    "county": "Johnson County",
+    "cameraCount": 63,
+    "flockCount": 57
+  },
+  {
+    "name": "Noblesville",
+    "county": "Hamilton County",
+    "cameraCount": 48,
+    "flockCount": 45
+  },
+  {
+    "name": "Gary",
+    "county": "Lake County",
+    "cameraCount": 48,
+    "flockCount": 38
+  },
+  {
+    "name": "Fishers",
+    "county": "Hamilton County",
+    "cameraCount": 47,
+    "flockCount": 47
+  },
+  {
+    "name": "Anderson",
+    "county": "Madison County",
+    "cameraCount": 44,
+    "flockCount": 44
+  },
+  {
+    "name": "Muncie",
+    "county": "Delaware County",
+    "cameraCount": 42,
+    "flockCount": 32
+  },
+  {
+    "name": "Elkhart",
+    "county": "Elkhart County",
+    "cameraCount": 36,
+    "flockCount": 31
+  },
+  {
+    "name": "Terre Haute",
+    "county": "Vigo County",
+    "cameraCount": 34,
+    "flockCount": 34
+  },
+  {
+    "name": "Highland",
+    "county": "Lake County",
+    "cameraCount": 33,
+    "flockCount": 19
+  },
+  {
+    "name": "Portage",
+    "county": "Porter County",
+    "cameraCount": 29,
+    "flockCount": 29
+  },
+  {
+    "name": "Hammond",
+    "county": "Lake County",
+    "cameraCount": 28,
+    "flockCount": 8
+  },
+  {
+    "name": "Clarksville",
+    "county": "Clark County",
+    "cameraCount": 27,
+    "flockCount": 23
+  },
+  {
+    "name": "Avon",
+    "county": "Hendricks County",
+    "cameraCount": 26,
+    "flockCount": 26
+  }
+]
