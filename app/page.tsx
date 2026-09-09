@@ -1,26 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Cctv, UserGroup, Map, MapPin } from "lucide-react";
 import CityPicker from "./components/CityPicker";
-import { useState, useEffect } from "react";
+import { Cctv, UserGroup, Map, MapPin } from "lucide-react";
 
 export default function Home() {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 767);
-    }
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    }
-  }, []);
-
   return (
     <main>
       <section className="relative flex min-h-screen items-center justify-center">
@@ -61,11 +45,10 @@ export default function Home() {
             </div>
             </div>
 
-            {!isMobile && (
-              <div className="mx-auto mt-8 max-w-3xl">
-                <CityPicker />
-              </div>
-            )}
+            <div className="mx-auto mt-8 max-w-3xl">
+              <CityPicker />
+            </div>
+            
         </div>
       </section>
 

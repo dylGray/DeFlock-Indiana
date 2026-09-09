@@ -1,10 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { CctvOff, Menu, X } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-
-import { CctvOff, Menu, X } from "lucide-react";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Cctv, ChevronDown, MapPin } from "lucide-react";
+import { ChevronDown, MapPin } from "lucide-react";
 import cities from "../data/cities.json";
 
 type City = {
