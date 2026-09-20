@@ -24,7 +24,7 @@ export default function Home() {
                 See What&apos;s Watching Indiana
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">Tracking the growing use of <strong>Automated License Plate Readers (ALPRs)</strong> and bringing greater awareness to mass surveillance across Indiana.</p>
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">Tracking the growing use of <strong>Automated License Plate Readers (ALPRs)</strong>, specifically Flock cameras, and bringing greater awareness to mass surveillance across Indiana.</p>
             </div>
 
             <div className="mx-auto mt-14 grid max-w-3xl grid-cols-1 overflow-hidden rounded-2xl border border-white/15 bg-black/45 backdrop-blur-sm md:grid-cols-2">
@@ -56,12 +56,12 @@ export default function Home() {
         <div className="mx-auto max-w-6xl">
           <div className="max-w-3xl">
             <h2 className="pb-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              What Are Automated License Plate Readers (ALPRs)?
+              What Are Flock Cameras?
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">These are camera systems that automatically capture and analyze passing vehicles, creating a digital record of where and when a vehicle was observed.</p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">Unlike a traditional security camera that simply records video, ALPRs use software to extract information from each vehicle they detect. This can include the license plate, date, time, and location of the detection, as well as characteristics such as the vehicle&apos;s make, model, color, bumper stickers, roof racks, and visible damage.</p>
+            <p className="mt-6 text-lg leading-8 text-slate-600">Unlike a traditional security camera that simply records video, Flocks use software to extract information from each vehicle they detect. This can include the license plate, date, time, and location of the detection, as well as characteristics such as the vehicle&apos;s make, model, color, bumper stickers, roof racks, and visible damage.</p>
 
             <p className="mt-6 text-lg leading-8 text-slate-600">That information can then be stored as a searchable record. Instead of reviewing hours of camera footage, authorized users can search vehicle detections to determine where and when a particular vehicle was observed.</p>
           </div>
@@ -84,12 +84,11 @@ export default function Home() {
               The Risks of Mass License Plate Surveillance
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-300">One of the most significant concerns surrounding these systems is their ability to record the movements of ordinary people who are not suspected of committing a crime. As vehicles pass ALPR cameras, their locations can be recorded without a warrant, probable cause, or individualized suspicion.</p>
+            <p className="mt-6 text-lg leading-8 text-slate-300">One of the most significant concerns surrounding these systems is their ability to record the movements of ordinary people who are not suspected of committing a crime. As vehicles pass Flock cameras, their locations can be recorded without a warrant, probable cause, or individualized suspicion.</p>
 
-            <p className="mt-5 text-lg leading-8 text-slate-300">The concern extends beyond the collection of this data. ALPR systems create databases of vehicle sightings that can be searched by authorized users, raising important questions about who has access, how that access is monitored, and what happens when the technology is used outside of its intended purpose.</p>
+            <p className="mt-5 text-lg leading-8 text-slate-300"><a target="_blank" className="underline" href="https://www.flocksafety.com/">Flock Safety</a> is the dominant manufacturer behind this expansion. Its cameras make up the majority of documented ALPRs in the United States, giving the company an outsized role in how this surveillance infrastructure is deployed, connected, and accessed across communities.</p>
 
-            <p className="mt-5 text-lg leading-8 text-slate-300"><a target="_blank" className="underline" href="">Flock Safety</a> is the dominant manufacturer behind this expansion. Its cameras make up the majority of documented ALPRs in the United States, giving the company an outsized role in how this surveillance infrastructure is deployed, connected, and accessed across communities.</p>
-
+            <p className="mt-5 text-lg leading-8 text-slate-300">Here are some real-world cases showing how this surveillance infrastructure has already been misused and abused.</p>
           </div>
 
           <div className="grid gap-5">

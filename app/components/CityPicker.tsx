@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ChevronDown, MapPin } from "lucide-react";
+import { ChevronDown, MapPin, X } from "lucide-react";
 import cities from "../data/cities.json";
 
 type City = {
@@ -15,18 +15,6 @@ export default function CityPicker() {
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
-        setIsOpen(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
 
   function handleSelectCity(city: City) {
     setSelectedCity(city);
@@ -42,6 +30,10 @@ export default function CityPicker() {
         >
           Find a Flock in Indiana
         </label>
+
+        <p className="mt-1 text-sm text-slate-400">
+          Select a city below to see how many ALPR cameras have been documented there. 
+        </p>
 
         <div ref={containerRef} className="relative mt-3">
           <button
@@ -79,7 +71,16 @@ export default function CityPicker() {
         </div>
 
         {selectedCity && (
-          <div className="mt-6 rounded-2xl bg-slate-950 p-8 text-white">
+          <div className="relative mt-6 rounded-2xl bg-slate-950 p-8 text-white">
+            <button
+              id="closeModal"
+              type="button"
+              onClick={() => setSelectedCity(null)}
+              aria-label="Close"
+              className="absolute right-4 top-4 text-slate-400 transition hover:text-white"
+            >
+              <X className="h-5 w-5" />
+            </button>
             <div className="flex items-center gap-2 text-slate-400">
               <MapPin className="h-5 w-5" />
               <span className="text-sm font-semibold uppercase tracking-wider">
