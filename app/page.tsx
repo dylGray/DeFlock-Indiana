@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import CityPicker from "./components/CityPicker";
+import PetitionForm from "./components/Form";
 import { Cctv, UserGroup, Map, MapPin } from "lucide-react";
 
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
 
                 <p className="mt-4 text-5xl font-bold tracking-tight sm:text-6xl">3,140+</p>
 
-                <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-white/75">Flock Cameras Documented in Indiana</p>
+                <p className="mt-3 text-sm font-semibold text-white/75">Flock Cameras Documented in Indiana</p>
             </div>
 
             <div className="flex flex-col items-center border-t border-white/15 px-8 py-10 md:border-t-0">
@@ -41,7 +42,7 @@ export default function Home() {
 
                 <p className="mt-4 text-5xl font-bold tracking-tight sm:text-6xl">3</p>
 
-                <p className="mt-3 text-sm font-semibold uppercase tracking-wider text-white/75">Communities Rejecting or Ending Flock</p>
+                <p className="mt-3 text-sm font-semibold text-white/75">Communities Rejecting or Ending Flock</p>
             </div>
             </div>
 
@@ -59,11 +60,11 @@ export default function Home() {
               What Are Flock Cameras?
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">These are camera systems that automatically capture and analyze passing vehicles, creating a digital record of where and when a vehicle was observed.</p>
+            <p className="mt-3 mb:mt-6 text-md md:text-lg leading-7 md:leading-8 text-slate-600">These are camera systems that automatically capture and analyze passing vehicles, creating a digital record of where and when a vehicle was observed.</p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">Unlike a traditional security camera that simply records video, Flocks use software to extract information from each vehicle they detect. This can include the license plate, date, time, and location of the detection, as well as characteristics such as the vehicle&apos;s make, model, color, bumper stickers, roof racks, and visible damage.</p>
+            <p className="mt-6 text-md md:text-lg leading-7 md:leading-8  text-slate-600">Unlike a traditional security camera that simply records video, Flocks use software to extract information from each vehicle they detect. This can include the license plate, date, time, and location of the detection, as well as characteristics such as the vehicle&apos;s make, model, color, bumper stickers, roof racks, and visible damage.</p>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">That information can then be stored as a searchable record. Instead of reviewing hours of camera footage, authorized users can search vehicle detections to determine where and when a particular vehicle was observed.</p>
+            <p className="mt-6 text-md md:text-lg leading-7 md:leading-8  text-slate-600">That information can then be stored as a searchable record. Instead of reviewing hours of camera footage, authorized users can search vehicle detections to determine where and when a particular vehicle was observed.</p>
           </div>
 
           <div className="relative mt-12 aspect-video w-full overflow-hidden rounded-2xl shadow-lg">
@@ -74,6 +75,8 @@ export default function Home() {
               className="object-cover object-center"
             />
           </div>
+
+          <p className="mt-3 text-sm text-slate-500">Here is an example of a Flock in action, capturing meta data on this persons truck.</p>
         </div>
       </section>
 
@@ -81,14 +84,14 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-2 lg:items-center">
           <div>
             <h2 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">
-              The Risks of Mass License Plate Surveillance
+              Why These Are Dangerous
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-300">One of the most significant concerns surrounding these systems is their ability to record the movements of ordinary people who are not suspected of committing a crime. As vehicles pass Flock cameras, their locations can be recorded without a warrant, probable cause, or individualized suspicion.</p>
+            <p className="mt-10 text-md md:text-lg leading-7 md:leading-8 text-slate-300">One of the most significant concerns surrounding these systems is their ability to record the movements of ordinary people who are not suspected of committing a crime. As vehicles pass Flock cameras, their locations can be recorded without a warrant, probable cause, or individualized suspicion.</p>
 
-            <p className="mt-5 text-lg leading-8 text-slate-300"><a target="_blank" className="underline" href="https://www.flocksafety.com/">Flock Safety</a> is the dominant manufacturer behind this expansion. Its cameras make up the majority of documented ALPRs in the United States, giving the company an outsized role in how this surveillance infrastructure is deployed, connected, and accessed across communities.</p>
+            <p className="mt-5 text-md md:text-lg leading-7 md:leading-8 text-slate-300"><a target="_blank" className="underline" href="https://www.flocksafety.com/">Flock Safety</a> is the dominant manufacturer behind this expansion. Its cameras make up the majority of documented ALPRs in the United States, giving the company an outsized role in how this surveillance infrastructure is deployed, connected, and accessed across communities.</p>
 
-            <p className="mt-5 text-lg leading-8 text-slate-300">Here are some real-world cases showing how this surveillance infrastructure has already been misused and abused.</p>
+            <p className="mt-5 text-md md:text-lg leading-7 md:leading-8 text-slate-300">Here are some real-world cases showing how this surveillance infrastructure has already been misused and abused.</p>
           </div>
 
           <div className="grid gap-5">
@@ -163,7 +166,7 @@ export default function Home() {
               Explore DeFlock
             </h2>
 
-            <p className="mt-6 text-lg leading-8 text-slate-600">DeFlock is an open-source project dedicated to documenting ALPRs across the United States. Its tools can help you see where ALPR cameras have been reported, better understand how the technology works, and learn more about the growing surveillance network being built across communities.</p>
+            <p className="mt-6 text-md md:text-lg leading-7 md:leading-8 text-slate-600">DeFlock is an open-source project dedicated to documenting Flock's across the United States. Its tools can help you see where Flock cameras have been reported, better understand how the technology works, and learn more about the growing surveillance network being built across communities.</p>
           </div>
 
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -181,7 +184,7 @@ export default function Home() {
                 Explore the Camera Map
               </h3>
 
-              <p className="mt-4 flex-1 leading-7 text-slate-600">View community-reported ALPR locations across the country and see where license plate readers have been documented near your community.</p>
+              <p className="mt-4 flex-1 leading-7 text-slate-600">View community-reported Flock locations across the country and see where license plate readers have been documented near your community.</p>
 
               <span className="mt-6 font-semibold text-sky-700 transition group-hover:text-sky-600">
                 Open the DeFlock Map →
@@ -202,7 +205,7 @@ export default function Home() {
                 Spot Cameras
               </h3>
 
-              <p className="mt-4 flex-1 leading-7 text-slate-600">Found an ALPR camera in your community? Learn how to identify these systems and report their locations to help keep DeFlock&apos;s community-built map up to date.</p>
+              <p className="mt-4 flex-1 leading-7 text-slate-600">Found a Flock in your community? Learn how to identify these systems and report their locations to help keep DeFlock&apos;s community-built map up to date.</p>
 
               <span className="mt-6 font-semibold text-sky-700 transition group-hover:text-sky-600">
                 Report a Camera →
@@ -223,13 +226,27 @@ export default function Home() {
                 Get Involved
               </h3>
 
-              <p className="mt-4 flex-1 leading-7 text-slate-600">Connect with others working to bring greater transparency to ALPR surveillance. Find local DeFlock groups, meet people in your area, and get involved in your community.</p>
+              <p className="mt-4 flex-1 leading-7 text-slate-600">Connect with others working to bring greater transparency to mass surveillance. Find local DeFlock groups, meet people in your area, and get involved in your community.</p>
 
               <span className="mt-6 font-semibold text-sky-700 transition group-hover:text-sky-600">
                 Find a Local Group →
               </span>
             </a>
           </div>
+
+          {/* <div className="mx-auto mt-24 md:mt-32 max-w-2xl text-center">
+            <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Tell Indiana to Get Rid of Flock
+            </h3>
+
+            <p className="mt-6 text-md md:text-lg leading-7 md:leading-8 text-slate-600">
+              Add your name to our petition calling on state and local officials to end the use of Flock cameras in Indiana. Every signature helps show lawmakers that residents want limits on mass surveillance in their communities.
+            </p>
+          </div>
+
+          <div className="mt-10">
+            <PetitionForm />
+          </div> */}
         </div>
       </section>
     </main>

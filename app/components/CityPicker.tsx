@@ -83,7 +83,7 @@ export default function CityPicker() {
             </button>
             <div className="flex items-center gap-2 text-slate-400">
               <MapPin className="h-5 w-5" />
-              <span className="text-sm font-semibold uppercase tracking-wider">
+              <span className="text-xs md:text-sm font-semibold">
                 {selectedCity.name}, Indiana
               </span>
             </div>
@@ -91,11 +91,11 @@ export default function CityPicker() {
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div>
                 <p className="text-4xl font-bold tracking-tight">{selectedCity.cameraCount}</p>
-                <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-slate-400">Total ALPR Cameras</p>
+                <p className="mt-2 text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Total ALPR Cameras</p>
               </div>
               <div>
                 <p className="text-4xl font-bold tracking-tight text-red-500">{selectedCity.flockCount}</p>
-                <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-slate-400">Flock Cameras</p>
+                <p className="mt-2 text-xs md:text-sm font-semibold uppercase tracking-wider text-slate-400">Flock Cameras</p>
               </div>
             </div>
             <p className="mt-4 text-sm text-slate-400">
