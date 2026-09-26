@@ -234,7 +234,7 @@ export default function Home() {
             </a>
           </div>
 
-          {/* <div className="mx-auto mt-24 md:mt-32 max-w-2xl text-center">
+          <div className="mx-auto mt-24 md:mt-32 max-w-2xl text-center">
             <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Tell Indiana to Get Rid of Flock
             </h3>
@@ -246,7 +246,7 @@ export default function Home() {
 
           <div className="mt-10">
             <PetitionForm />
-          </div> */}
+          </div>
         </div>
       </section>
     </main>
