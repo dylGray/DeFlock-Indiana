@@ -55,7 +55,7 @@ export default function PetitionForm() {
             placeholder="Jane"
             className={inputClass}
           />
-          <FieldError messages={state.errors?.firstName} />
+          <FieldError messages={state.fieldErrors?.firstName} />
         </div>
 
         <div>
@@ -74,7 +74,7 @@ export default function PetitionForm() {
             placeholder="Doe"
             className={inputClass}
           />
-          <FieldError messages={state.errors?.lastName} />
+          <FieldError messages={state.fieldErrors?.lastName} />
         </div>
       </div>
 
@@ -93,7 +93,7 @@ export default function PetitionForm() {
           placeholder="jane@example.com"
           className={inputClass}
         />
-        <FieldError messages={state.errors?.email} />
+        <FieldError messages={state.fieldErrors?.email} />
       </div>
 
       <div className="mt-5">
@@ -110,10 +110,10 @@ export default function PetitionForm() {
           placeholder="Why does this matter to you?"
           className={inputClass}
         />
-        <FieldError messages={state.errors?.message} />
+        <FieldError messages={state.fieldErrors?.message} />
       </div>
 
-      {state.error && <p className="mt-5 text-sm text-red-600">{state.error}</p>}
+      {/* {state.error && <p className="mt-5 text-sm text-red-600">{state.error}</p>} */}
 
       <button
         type="submit"

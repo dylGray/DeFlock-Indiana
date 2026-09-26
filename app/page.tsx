@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import CityPicker from "./components/CityPicker";
-import PetitionForm from "./components/Form";
+import PetitionForm from "./components/PetitionForm";
 import { Cctv, UserGroup, Map, MapPin } from "lucide-react";
 
 export default function Home() {
@@ -233,6 +233,8 @@ export default function Home() {
               </span>
             </a>
           </div>
+
+          <div className="my-20 border-t border-slate-200" />
 
           <div className="mx-auto mt-24 md:mt-32 max-w-2xl text-center">
             <h3 className="text-3xl font-bold tracking-tight sm:text-4xl">
